@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+    <div class="chat-wrapper">
+        <header class="chat-header">
+            <h3>Support Assistant</h3>
+            <span class="status-dot"></span>
+        </header>
+
+        <div id="chat-box" class="chat-body">
+            <!-- Messages will be injected here -->
+            <div class="bot-msg">Hello! How can I help you today?</div>
+        </div>
+
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Type your question..." autofocus>
+            <button onclick="sendMessage()" id="send-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
